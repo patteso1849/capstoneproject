@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Contact Me</title>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+  rel="stylesheet"
+/>
+
+
+<!-- <link rel="stylesheet" href="../styles.css" />
+ -->
+
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="https://github.com/patteso1849/Capstone/">About</a></li>
+      <li><a href="https://www.linkedin.com/in/rc-patterson-a52626164/
+        ">Contact</a></li>      
+    </ul>
+  </nav>
+
+
+  <figure>
+    <img
+    src="https://picsum.photos/2200/750.jpg"
+    <figcaption>Welcome to St. Louis </figcaption>
+  </figure>
+
+<h2>Open Mic's in St. Louis City</h2>
+<h3>Search by typing</h3>
+<h4>
+    <li>Music</li>
+    <li>Comedy</li>
+    <li>Poetry (Spoken Word)</li>
+    <li>Day of the Week</li>
+</h4>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Open Mics.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="http://www.thevenicecafe.com/">Venice Cafe<p hidden>this be hidden. Comedy, Music and Poetry (Spoken Word), Monday, night</p>
+  <li><a href="https://www.theheavyanchor.com/">Heavy Anchor<p hidden>this be hidden. Comedy, Monday, night</p>
+    <li><a href="https://www.facebook.com/PoeticJusticeOpenMic/">Poetic Justice <p hidden>Poetry (Spoken Word), Last, Sunday, Last Sunday</p>
+  <li><a href="https://www.facebook.com/LyricalandTherapy/">Lyrical Therapy<p hidden>this be hidden. Music, Poetry (Spoken Word), Monday, night</p>
+  <li><a href="https://1860saloon.com/event/open-mic-night-hosted-by-tim-perry-9-to-1-a-m/2019-08-27/">1860's Saloon STL<p hidden>this be hidden. Comedy, Music and Poetry (Spoken Word), Tuesday, night</p>
+     <li><a href="https://thewolfstl.com/calendar/?mc_id=4579">The Wolf<p hidden>this be hidden. Comedy, Music and Poetry (Spoken Word), Tuesday, night</p>
+  <li><a href="https://www.openmicstlouis.com/MoreInfo/NTYxNyMjIyNURVhU">Alpha Brewery<p hidden>this be hidden. Comedy, Music and Poetry (Spoken Word), Wednesday, night</p>
+  <li><a href="https://www.facebook.com/JoaniesPizzeriaSoulard/posts/its-thursday-night-time-for-open-mic-night-come-see-see-nick-behind-the-bar-star/10150671740302665/">Joanie's Pizzeria<p hidden>this be hidden. Comedy, Music and Poetry (Spoken Word), Thursday, night</p>
+  <li><a href="http://hartfordcoffee.com/events/open-mic-night-1">Hartford Coffee Co<p hidden>this be hidden. Comedy, Music and Poetry (Spoken Word), Friday, night</p>
+  </ul>
+
+  <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+    
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+
+
+
+<ul>
+    <li>
+        <li><a href="https://www.openmicstlouis.com/">Go to https://www.openmicstlouis.com/ for more information on OpenMics in St. Louis</p>
+    </li>
+  </ul>
+
+<footer>
+  <address>
+    <ul>
+      <li>
+        <a href="https://github.com/patteso1849" target="_blank">
+          <span class="fab fa-github-square"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/rc-patterson-a52626164/" target="_blank">
+          <span class="fab fa-linkedin"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com/" target="_blank">
+          <span class="fab fa-twitter"></span>
+        </a>
+      </li>
+    </ul>
+  </address>
+</footer>
+
+
+</body>
+</html>
